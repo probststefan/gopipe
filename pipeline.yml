@@ -1,9 +1,10 @@
 step1:
-  script: ls -lha
+  image: node:8
+  script:
+    - node
+    - test.js
 step2:
-  image: node:9.0
-  script: ls
-step3:
-  script: ls -l
-step4:
-  image: php:56
+  image: php:cli
+  script:
+    - php
+    - test.php

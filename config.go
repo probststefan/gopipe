@@ -8,7 +8,7 @@ import (
 
 type step struct {
 	Image  string
-	Script string
+	Script []string
 }
 
 type stepList struct {
