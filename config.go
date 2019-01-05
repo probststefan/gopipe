@@ -17,14 +17,12 @@ type stepList struct {
 
 func getConf(sl *stepList) error {
 	yamlFile, err := ioutil.ReadFile("pipeline.yml")
-
 	if err != nil {
 		return err
 	}
 
 	slice := yaml.MapSlice{}
 	err = yaml.Unmarshal(yamlFile, &slice)
-
 	if err != nil {
 		return err
 	}
@@ -33,13 +31,11 @@ func getConf(sl *stepList) error {
 		s := step{}
 
 		out, err := yaml.Marshal(sr.Value)
-
 		if err != nil {
 			return err
 		}
 
 		err = yaml.Unmarshal(out, &s)
-
 		if err != nil {
 			return err
 		}
