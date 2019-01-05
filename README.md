@@ -1,8 +1,6 @@
 # gopipe
 
-I had several large datasets which had to be processed in steps. At each editing step I wanted to be free in the choice of programming language and the type of implementation.
-
-The result is a simple Go program that starts a separate Docker container for each step and executes a command or script there.
+I had several large datasets which had to be processed in steps. At each editing step I wanted to be free in the choice of programming language and the type of implementation. The result is a simple Go program that starts a separate Docker container for each step and executes a command or script there. Consider it a simple local implementation of the GitLab or Jenkins build pipeline.
 
 ## Pipeline example
 
